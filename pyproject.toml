@@ -1,0 +1,23 @@
+[project]
+name = "main"
+version = "1.0.0"
+description = "The basic blog app built from the Flask tutorial."
+license = {text = "BSD-3-Clause"}
+dependencies = [
+    "flask",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[build-system]
+requires = ["flit_core<4"]
+build-backend = "flit_core.buildapi"
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["main", "tests"]
