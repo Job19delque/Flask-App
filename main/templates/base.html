@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<title>{% block title %}{% endblock %} - Flaskr</title>
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+<title>{% block title %}{% endblock %} - The Mission</title>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static', filename='style.css') }}"
+/>
 <nav>
-  <h1>Flaskr</h1>
+  <h1>Memories Down</h1>
   <ul>
     {% if g.user %}
     <li><span>{{ g.user['username'] }}</span></li>
